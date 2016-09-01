@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6866CC9F-5A04-4EDF-B779-45908CE44110}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lighting</RootNamespace>
+    <AssemblyName>Lighting</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoConnector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoConnector.Designer.cs">
+      <DependentUpon>AutoConnector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorSystem.Designer.cs">
+      <DependentUpon>ColorSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connector.Designer.cs">
+      <DependentUpon>Connector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyCreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeyCreator.Designer.cs">
+      <DependentUpon>KeyCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyMacro.cs" />
+    <Compile Include="Macro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Macro.Designer.cs">
+      <DependentUpon>Macro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AutoConnector.resx">
+      <DependentUpon>AutoConnector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorSystem.resx">
+      <DependentUpon>ColorSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connector.resx">
+      <DependentUpon>Connector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyCreator.resx">
+      <DependentUpon>KeyCreator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Macro.resx">
+      <DependentUpon>Macro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sparks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\surge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strobe.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brownout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flicker.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bouncy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\short.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bugs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sparks1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sensors.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plasma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door_in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sparks.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brownout.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\surge.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flicker.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fire_blowout.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bouncy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sonar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rgb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\victory.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

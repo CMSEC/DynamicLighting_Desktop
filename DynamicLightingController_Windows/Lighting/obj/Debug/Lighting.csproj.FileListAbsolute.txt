@@ -1,0 +1,13 @@
+w:\users\connor\documents\visual studio 2015\Projects\Lighting\Lighting\bin\Debug\Lighting.exe.config
+w:\users\connor\documents\visual studio 2015\Projects\Lighting\Lighting\bin\Debug\Lighting.exe
+w:\users\connor\documents\visual studio 2015\Projects\Lighting\Lighting\bin\Debug\Lighting.pdb
+w:\users\connor\documents\visual studio 2015\Projects\Lighting\Lighting\obj\Debug\Lighting.csprojResolveAssemblyReference.cache
+w:\users\connor\documents\visual studio 2015\Projects\Lighting\Lighting\obj\Debug\Lighting.Properties.Resources.resources
+w:\users\connor\documents\visual studio 2015\Projects\Lighting\Lighting\obj\Debug\Lighting.csproj.GenerateResource.Cache
+w:\users\connor\documents\visual studio 2015\Projects\Lighting\Lighting\obj\Debug\Lighting.exe
+w:\users\connor\documents\visual studio 2015\Projects\Lighting\Lighting\obj\Debug\Lighting.pdb
+w:\users\connor\documents\visual studio 2015\Projects\Lighting\Lighting\obj\Debug\Lighting.ColorSystem.resources
+w:\users\connor\documents\visual studio 2015\Projects\Lighting\Lighting\obj\Debug\Lighting.Macro.resources
+w:\users\connor\documents\visual studio 2015\Projects\Lighting\Lighting\obj\Debug\Lighting.KeyCreator.resources
+w:\Users\Connor\documents\visual studio 2015\Projects\Lighting\Lighting\obj\Debug\Lighting.Connector.resources
+w:\Users\Connor\documents\visual studio 2015\Projects\Lighting\Lighting\obj\Debug\Lighting.AutoConnector.resources
